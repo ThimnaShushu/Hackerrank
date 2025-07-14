@@ -5,18 +5,16 @@ def swap_case(s):
     wordList=list(s)
     
     
-    index = 0    
     for i in range(len(wordList)):
-        if wordList[index].isupper():
-            wordList[index] = wordList[index].lower()
-            index= index +1
+        if wordList[i].isupper():
+            wordList[i] = wordList[i].lower()
+            
         else:
             wordList[i] =wordList[i].upper()
-            index= index +1
 
             
     
     return "".join(wordList)
 
-x = str(input())
+x = str(input()).strip()
 print(swap_case(x))
