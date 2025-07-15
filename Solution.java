@@ -15,28 +15,25 @@ class Result {
      */
 
     public static void plusMinus(List<Integer> arr) {
-    // Write your code here
+        // Write your code here
         int denom = arr.size();
         int negatives = 0;
         int positives = 0;
         int zeros = 0;
-        
-        
-        for (int i=0; i<denom; i++){
-            if (arr.get(i)>0){
+
+        for (int i = 0; i < denom; i++) {
+            if (arr.get(i) > 0) {
                 positives++;
-            }
-            else if(arr.get(i)<0){
+            } else if (arr.get(i) < 0) {
                 negatives++;
-            }
-            else if (arr.get(i)==0){
+            } else if (arr.get(i) == 0) {
                 zeros++;
             }
-            
+
         }
-        System.out.println(String.format("%.6f", (double)positives/denom));
-        System.out.println(String.format("%.6f", (double) negatives/denom));
-        System.out.println(String.format("%.6f", (double) zeros/denom));
+        System.out.println(String.format("%.6f", (double) positives / denom));
+        System.out.println(String.format("%.6f", (double) negatives / denom));
+        System.out.println(String.format("%.6f", (double) zeros / denom));
     }
 
 }
