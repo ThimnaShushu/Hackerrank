@@ -31,7 +31,7 @@ class Result {
             maxNum = maxNum + arr.get(i);
         }
 
-        System.out.println(minNum + "  " + maxNum);
+        System.out.println(minNum + " " + maxNum);
 
     }
 
