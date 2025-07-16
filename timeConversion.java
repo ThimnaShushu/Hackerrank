@@ -63,7 +63,7 @@ class Result {
 
             } else {
                 if (minutes < 10) {
-                    minutesString = "0" + minutes;
+                    minutesString = "" + minutes;
                 } else {
                     minutesString = "" + minutes;
                 }
